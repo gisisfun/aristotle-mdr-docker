@@ -1,0 +1,8 @@
+*.pyc
+*.sqlite3
+.env
+.env.secret
+.vscode
+static/
+media/
+postgres/data/
