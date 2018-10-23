@@ -37,7 +37,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.getenv('DEBUG', False)))
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = bool(int(os.getenv('DEBUG', False)))
 
 
 # Application definition
