@@ -11,12 +11,14 @@
 - Visit localhost:8000
 
 ## Production
-- Follow the first 2 steps outlined above
-- Run `docker-compose -f docker-compose.prod.yml up --build -d`
-- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py migrate`
-- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py collectstatic`
-- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createcachetable`
-- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createsuperuser`
+- Follow the first 2 steps outlined above, then:
+```sh
+docker-compose -f docker-compose.prod.yml up --build -d
+docker-compose -f docker-compose.prod.yml run web python3 manage.py migrate
+docker-compose -f docker-compose.prod.yml run web python3 manage.py collectstatic
+docker-compose -f docker-compose.prod.yml run web python3 manage.py createcachetable
+docker-compose -f docker-compose.prod.yml run web python3 manage.py createsuperuser
+```
 - Visit website
 
 ## TODO
