@@ -124,5 +124,6 @@ ARISTOTLE_SETTINGS.update({
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'django_cache',
     }
 }
