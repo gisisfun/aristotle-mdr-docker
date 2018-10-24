@@ -1,6 +1,4 @@
-# Dockerized Django
-Sample project on how to dockerize your Django project in development and production environments.
-https://github.com/nicholaskajoh/dockerized-django
+# Dockerized Aristotle Metadata Registry
 
 ## Requirements
 - Docker
@@ -17,4 +15,5 @@ https://github.com/nicholaskajoh/dockerized-django
 - Run `docker-compose -f docker-compose.prod.yml up --build -d`
 - Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py migrate`
 - Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py collectstatic`
+- Optional? Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createcachetable`
 - Visit website

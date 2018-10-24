@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from dotenv import load_dotenv
-import dj_database_url
 
 # Import all of the necessary settings to get the Aristotle server working.
 # These are defaults and can be overridden within this file.
@@ -68,7 +67,16 @@ WSGI_APPLICATION = 'aristotle.wsgi.application'
 # Below is the default database setup, which uses the file-based SQLite database.
 # For production systems, examine the django guide below to getting other databases configured.
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-DATABASES = {'default': dj_database_url.config()}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': os.getenv('POSTGRES_HOST'),
+        'PORT': os.getenv('POSTGRES_PORT'),
+        'USER': os.getenv('POSTGRES_USER'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        'NAME': os.getenv('POSTGRES_DB'),
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/

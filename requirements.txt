@@ -13,7 +13,6 @@ cssselect2==0.2.1
 defusedxml==0.5.0
 diff-match-patch==20121119
 dill==0.2.8.2
-dj-database-url==0.5.0
 Django==1.11.16
 django-autocomplete-light==3.2.10
 django-autoslug==1.9.3
