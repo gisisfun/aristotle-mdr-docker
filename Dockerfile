@@ -17,7 +17,6 @@ RUN apk --no-cache add \
     build-base \
     gettext
 RUN pip install -r requirements.txt
-RUN pip install django-impersonate psycopg2 django-improved-user==1.0.0 dj-database-url
 
 # clean
 # RUN apk del -r python3-dev postgresql

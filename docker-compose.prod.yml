@@ -23,7 +23,7 @@ services:
     ports:
       - "80:80"
   db:
-    image: "postgres"
+    image: "postgres:10.3-alpine"
     restart: always
     env_file:
       - ./.env.secret
