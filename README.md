@@ -15,5 +15,6 @@
 - Run `docker-compose -f docker-compose.prod.yml up --build -d`
 - Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py migrate`
 - Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py collectstatic`
-- Optional? Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createcachetable`
+- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createcachetable`
+- Run `docker-compose -f docker-compose.prod.yml run web python3 manage.py createsuperuser`
 - Visit website
