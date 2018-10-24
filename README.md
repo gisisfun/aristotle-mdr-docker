@@ -23,3 +23,4 @@
 - Configure emails
 - Configure Celery
 - Configure Reddis
+- SSL/TLS with Let's Encrypt
