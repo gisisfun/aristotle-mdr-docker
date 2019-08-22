@@ -17,7 +17,7 @@ Django==1.11.23
 django-autocomplete-light==3.2.10
 django-autoslug==1.9.3
 django-bootstrap3==8.2.3
-django-bootstrap3-datetimepicker-2==2.7.0
+django-bootstrap3-datetimepicker-2==2.8.2
 django-braces==1.13.0
 django-ckeditor==5.6.1
 django-constrainedfilefield==3.2.0
