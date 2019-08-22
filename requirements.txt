@@ -32,7 +32,7 @@ django-notifications-hq==1.4.0
 django-organizations==1.1.1
 django-rest-swagger==2.2.0
 django-reversion==2.0.13
-django-reversion-compare==0.8.5
+django-reversion-compare==0.8.6
 django-static-precompiler==1.8.2
 django-user-sessions==1.6.0
 djangorestframework==3.9.1
