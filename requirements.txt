@@ -64,7 +64,7 @@ Pyphen==0.9.5
 python-dotenv==0.7.1
 python-magic==0.4.15
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.1
 requests==2.20.0
 Rx==1.6.1
 simplejson==3.16.0
