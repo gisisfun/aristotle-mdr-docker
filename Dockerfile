@@ -12,6 +12,8 @@ RUN apk --no-cache add \
     libffi-dev \
     jpeg-dev \
     zlib-dev \
+    pango-dev \
+    cairo-dev \
     postgresql-client \
     postgresql-dev \
     build-base \
